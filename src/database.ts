@@ -1,5 +1,5 @@
 import { Knex, knex as setupKnext } from "knex";
-import { env } from "../env";
+import { env } from "./env";
 
 if (!process.env.DATABASE_URL) {
   throw new Error("DATABASE_URL is not set");
