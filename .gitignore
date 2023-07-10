@@ -2,3 +2,4 @@ db/*.db
 node_modules
 .env
 *.todo
+.env.test
