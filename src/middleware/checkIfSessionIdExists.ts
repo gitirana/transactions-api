@@ -1,6 +1,6 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 
-export function checkIfSessionIdExists(request: FastifyRequest, reply: FastifyReply) {
+export async function checkIfSessionIdExists(request: FastifyRequest, reply: FastifyReply) {
   const sessionId = request.cookies.sessionId;
 
   if (!sessionId) {
